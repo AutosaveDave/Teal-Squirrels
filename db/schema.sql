@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS poet_db;
+CREATE DATABASE poet_db;
