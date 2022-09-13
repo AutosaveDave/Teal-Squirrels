@@ -10,7 +10,7 @@ const sess ={
     saveUnitialized:true,
     store: new SequelizeStore({
         db: sequelize,
-    });
+    }),
 },
 
 const app = express();
@@ -28,6 +28,5 @@ app.use(controllers);
 
 sequelize.sync({force: false}).then(()=>{
     app.listen(PORT, () => console.log("doing the thing fr fr"));
-});
-}
+);
 
